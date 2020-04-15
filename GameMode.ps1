@@ -1,4 +1,5 @@
-﻿Import-Module "D:\Programy\AudioDeviceCmdlets.dll"   #library for controlling sound settings
+#module for controlling sound
+if (!(Get-Module -ListAvailable -Name AudioDeviceCmdlets)) {(Install-Module AudioDeviceCmdlets -Scope CurrentUser)}	#if there is not module, install it
 $sleepTime = 1.5
 
 try {
