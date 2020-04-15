@@ -31,7 +31,7 @@ terminateProcess($processesToStop)
 
 try {
     if ( $(Get-Process -name TaskMgr -ErrorAction SilentlyContinue) -eq $null ) {
-        Write-Host "+ Spusteny Task Manager"
+        Write-Host "+ Running Task Manager"
         C:\Windows\System32\Taskmgr.exe
     }
 } catch {
@@ -41,7 +41,7 @@ try {
 
 try {
     if ( $(Get-Process -name HWiNFO64 -ErrorAction SilentlyContinue) -eq $null ) {
-        Write-Host "+ Spusteny HWiNFO"
+        Write-Host "+ Running HWiNFO"
         C:\Program` Files\HWiNFO64\HWiNFO64.EXE
     }
 } catch {
